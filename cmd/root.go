@@ -129,7 +129,7 @@ func getWeather() {
 	blue := color.New(color.FgBlue).SprintFunc()
 
 	// Build API URL with city parameter
-	url := fmt.Sprintf("http://api.weatherapi.com/v1/current.json?key=3740b72d6a5c4f1a8b7180441232709&q=%s&aqi=no", city)
+	url := fmt.Sprintf("http://api.weatherapi.com/v1/current.json?", city)
 	
 	// Make HTTP GET request
 	resp, err := http.Get(url)
